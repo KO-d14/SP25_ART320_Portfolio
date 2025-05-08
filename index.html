@@ -16,141 +16,187 @@
 
  -->
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <!-- REQUIRED: Meta Tags -->
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-     <!-- REQUIRED: Page Title -->
-     <title>Aina'sc Portfolio</title>
- 
-     <!-- REQUIRED: Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
- 
-     <!-- REQUIRED: Your Custom CSS-->
-     <link rel="stylesheet" href="css/style.css">
- 
-     <!-- REQUIRED: Google Font API -->
-     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
- </head>
- 
- <body>
-     <!-- Content will go here -->
- 
-     <!-- START of Header Section (this will be the TOP BAR of SCREEN)-->
+<!DOCTYPE html>
+<html lang="en">
 
-     <header class = "py-3">
-         <nav class = "navbar navbar-expand lg">
-             <a class = "navbar-brand" href="#"><img src="images/logoAina.png" alt="Logo Image" width = "70" height = "70" ></a> 
-             <div class = "container-fluid align-items-center d-flex"> 
-                 <div class = "ms-auto d-flex gap-3">
-                     <!-- Menu Links -->
-                     <a class = "navLinks navbar-brand" href="#">About</a>
-                     <a class = "navLinks navbar-brand" href="#">Portfolio</a>
-                     <a class = "navLinks navbar-brand" href="#">Contact</a>
-         
-                 </div>
-             </div> <!-- Container fluid div END-->
-         
-         </nav>
-     </header>
-     <!-- END of Header Section-->
- 
-     <!-- START of Hero Section (this is the SECTION BELOW TOP BANNER) -->
-     <section class = "hero show-on-scoll" id = "hero">
-         <div class = "container text-start codeBox whiteFonts globalPadding">
-             <h1 class = "display-4"> <span class = "pinkFonts"> Hello </span> World { </h1>
-                <p class="last-para">
-                    a <span class="text-type change-words" data-wait="3000" data-words='["Developer", "Creator", "Philomath"]'></span>
-                  </p>
-             <h1>}</h1>
-             <a href="#" class = "btn btn-primary">View My Work</a>
-         </div>
+<head>
+    <!-- REQUIRED: Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- REQUIRED: Page Title -->
+    <title>Aina'sc Portfolio</title>
+
+    <!-- REQUIRED: Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- REQUIRED: Your Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- REQUIRED: Google Font API -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Content will go here -->
+
+    <!-- START of Header Section (this will be the TOP BAR of SCREEN)-->
+
+    <header class="py-3">
+        <nav class="navbar navbar-expand lg">
+            <a class="navbar-brand" href="#"><img src="images/logoAina.png" alt="Logo Image" width="70" height="70"></a>
+            <div class="container-fluid align-items-center d-flex">
+                <div class="ms-auto d-flex gap-3">
+                    <!-- Menu Links -->
+                    <a class="navLinks navbar-brand" href="#">About</a>
+                    <a class="navLinks navbar-brand" href="#">Portfolio</a>
+                    <a class="navLinks navbar-brand" href="#">Contact</a>
+
+                </div>
+            </div> <!-- Container fluid div END-->
+
+        </nav>
+    </header>
+    <!-- END of Header Section-->
+
+    <!-- START of Hero Section (this is the SECTION BELOW TOP BANNER) -->
+    <section class="hero show-on-scoll globalPadding" id="hero">
+        <div class="container text-start codeBox whiteFonts ">
+            <h1 class="display-4"> <span class="pinkFonts"> Hello </span> World { </h1>
+            <p class="last-para">
+                a <span class="text-type change-words" data-wait="3000"
+                    data-words='["Developer", "Creator", "Philomath"]'></span>
+            </p>
+            <h1>}</h1>
+            <a href="#" class="btn btn-primary">View My Work</a>
+        </div>
     </section>
-        
-     <!-- END of Hero Section -->
- 
- 
- 
-     <!-- START of About Section -->
-     <section class = "about whiteFonts show-on-scoll" id = "about">
-         <h2>About Me</h2> 
-         <div class = about-container> 
-         <p><img src="images/gitHubProfileIMG.png" alt="Aina's Profile Image"></p>
-         <p>
-            I am currently pursuing a Bachelor's degree in Creative Media, with a concentration in Video Game Design and Development, at the University of Hawaii - West Oahu (UHWO). I am expected to graduate in Spring 2025. My education allows me to blend my passion for technology and creativity, equipping me with the skills to develop engaging and interactive content.
 
-            My journey into coding began when I was introduced to the field by a friend pursuing a programming career. Intrigued by the idea, I dove into research and began creating personal projects. Over the past 6-7 months, during the pandemic, I've been self-teaching through online resources like FreeCodeCamp and W3Schools. Through Massive Open Online Courses (MOOC), I’ve familiarized myself with languages and libraries such as JavaScript, Bootstrap, and JQuery.
-       
-
-         </p>
-         </div>
-     </section>
-     <!-- END of About Section -->
- 
- 
-     <!-- START of Project Section -->
-     <section class = "project" id = "project">
-         <h2>Project</h2>
- 
- 
-         <!-- START of Card 1 -->
-         <div class="card" style="width: 18rem;">
-             <img src="..." class="card-img-top" alt="...">
-             <div class="card-body">
-               <h2 class="card-title">Pūko‘a Kani ‘Āina (PKA) Undergraduate Research Experience</h2>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="btn btn-primary"> More Details</a>
-             </div>
-           </div>
-         <!-- END of Card 1 -->
- 
-         <!-- START of Card 2 -->
-         <div class="card" style="width: 18rem;">
-             <img src="..." class="card-img-top" alt="...">
-             <div class="card-body">
-               <h2 class="card-title">Pūko‘a Kani ‘Āina (PKA) Undergraduate Research Experience</h2>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="btn btn-primary"> More Details</a>
-             </div>
-           </div>
-         <!-- END of Card 2 -->        
-     </section>
-     <!-- END of About Section -->
- 
- 
-     <!-- START of Questions Section -->
-     <section class = "question">
-         Question
-     </section>
-     <!-- END of About Section -->
- 
-     <!-- START of Get Connected Section -->
-     <section class = "question">
-         Let's Work Together 
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-         </svg>
- 
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-         </svg>
- 
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-           </svg>
-     </section>
-     <!-- END of About Section -->
- 
-     <footer></footer>
- 
-     <!-- REQUIRED: Javascript -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="js/textEffects.js"></script>
+    <!-- END of Hero Section -->
 
 
- </body
- 
- </html>
+
+    <!-- START of About Section -->
+    <section class="about whiteFonts show-on-scoll globalPadding" id="about">
+        <div class="about-container" <h2>About Me</h2>
+            <div class=about-content-container>
+                <p><img src="images/gitHubProfileIMG.png" alt="Aina's Profile Image"></p>
+                <p>
+                    I am currently pursuing a Bachelor's degree in Creative Media, with a concentration in Video Game
+                    Design and Development, at the University of Hawaii - West Oahu (UHWO). I am expected to graduate in
+                    Spring 2025. My education allows me to blend my passion for technology and creativity, equipping me
+                    with the skills to develop engaging and interactive content.
+
+                    My journey into coding began when I was introduced to the field by a friend pursuing a programming
+                    career. Intrigued by the idea, I dove into research and began creating personal projects. Over the
+                    past 6-7 months, during the pandemic, I've been self-teaching through online resources like
+                    FreeCodeCamp and W3Schools. Through Massive Open Online Courses (MOOC), I’ve familiarized myself
+                    with languages and libraries such as JavaScript, Bootstrap, and JQuery.
+
+
+                </p>
+                <div class="skills">
+                    <!--  has inline two "buttons for hard skills and soft skills"; have your deisng for the intial project card here  -->
+
+
+
+                </div>
+            </div>
+            <div>
+    </section>
+    <!-- END of About Section -->
+
+
+    <!-- START of Project Section -->
+    <section class="project" id="project">
+        <h2>Projects</h2>
+
+
+        <div class="projectCards-container d-flex flex-wrap justify-content-center gap-4">
+            <!-- START of Card 1-->
+            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100" class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
+                <div class="image-container">
+                    <img src="" alt="Project image of PKA"
+                        class="project-image">
+                </div>
+                <p class="caption"><span class="code">&lt;</span>PKA Undergraduate Research<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            
+
+            <!-- START of Card 2 -->
+
+            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100" class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
+                <div class="image-container">
+                    <img src="images/appleLandingPageIMG.png" alt="Project image of Apple Landing Page"
+                        class="project-image">
+                </div>
+                <p class="caption"><span class="code">&lt;</span>Apple Landing Page<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <!-- START of Card 3 -->
+            <a href="https://codepen.io/ko-d14/pen/NWdrjwW?editors=1100" class="project-tile text-decoration-none flex-grow-1" style="max-width: 300px;">
+                <div class="image-container">
+                    <img src="images/FCCSurveyIMG.png" alt="Project image of FCC Survey Form"
+                        class="project-image">
+                </div>
+                <p class="caption"><span class="code">&lt;</span>Survey Form<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+    </section>
+    <!-- END of About Section -->
+
+
+    <!-- START of Questions Section -->
+    <section class="question">
+        Question
+    </section>
+    <!-- END of About Section -->
+
+   
+    <section class="contact-section ask-questions">
+        <h2>Questions?</h2>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      
+    <footer class="footer-section">
+        <h2>Let's Work Together!</h2>
+        <div class="social-icons">
+          <a href="https://github.com/yourusername" target="_blank"><i class="bi bi-github"></i> Github</a>
+          <!--<a href="https://codepen.io/yourusername" target="_blank"><i class="bi bi-code-slash"></i> CodePen</a> -->
+          <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          <a href="mailto:your@email.com"><i class="bi bi-envelope"></i> Email</a>
+        </div>
+        <hr />
+        <p>© 2025 | all rights reserved</p>
+      </footer>
+
+    <!-- REQUIRED: Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/textEffects.js"></script>
+
+
+</body </html>
