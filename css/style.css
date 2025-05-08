@@ -12,6 +12,9 @@ html {
 .globalPadding {
     padding: 80px 40px 80px 40px;
 }
+section {
+    padding: 80px 40px 80px 40px;
+}
 
 
    /* TEXT STYLES */
@@ -33,9 +36,18 @@ html {
    
    header {
        background: black;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: black;
+        width: 100%;
+    
    }
    
-   
+/* ------------- Hero Section -------------*/
+
+ 
+
    .navLinks {
        color: white; 
    }
@@ -63,6 +75,35 @@ html {
        background: black;
    }
    
+   .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-content-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .about-content-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+  }
+  
    
    
    
@@ -233,8 +274,8 @@ html {
       }
       
       .contact-form button {
-        background: white;
-        color: black;
+        background: green;
+        color: white;
         font-weight: bold;
         border: none;
         padding: 12px;
@@ -244,8 +285,29 @@ html {
       }
       
       .contact-form button:hover {
-        background: lightgreen;
-        color: white;
+        background: greenyellow;
+        color: black;
+      }
+      
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: row;
+      }
+      
+      @media (max-width: 768px) {
+        .social-icons {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      
+        .social-icons a {
+          width: 100%;
+          justify-content: center;
+        }
       }
       
 
