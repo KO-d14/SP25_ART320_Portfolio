@@ -39,10 +39,11 @@
  <body>
      <!-- Content will go here -->
  
-     <!-- START of Header Section-->
+     <!-- START of Header Section (this will be the TOP BAR of SCREEN)-->
+
      <header class = "py-3">
          <nav class = "navbar navbar-expand lg">
-             <a class = "navbar-brand" href="#"><img src="images/logoAina.png" alt="Logo Image" width: 50px ></a> 
+             <a class = "navbar-brand" href="#"><img src="images/logoAina.png" alt="Logo Image" width = "70" height = "70" ></a> 
              <div class = "container-fluid align-items-center d-flex"> 
                  <div class = "ms-auto d-flex gap-3">
                      <!-- Menu Links -->
@@ -57,22 +58,35 @@
      </header>
      <!-- END of Header Section-->
  
-     <!-- START of Hero Section -->
-     <section class = "hero">
-         <div class = "container text-center">
-             <h1 class = "display-4">Hello World </h1>
-             <p class = "lead">I am a passionate web developer.</p>
+     <!-- START of Hero Section (this is the SECTION BELOW TOP BANNER) -->
+     <section class = "hero show-on-scoll" id = "hero">
+         <div class = "container text-start codeBox whiteFonts globalPadding">
+             <h1 class = "display-4"> <span class = "pinkFonts"> Hello </span> World { </h1>
+                <p class="last-para">
+                    a <span class="text-type change-words" data-wait="3000" data-words='["Developer", "Creator", "Philomath"]'></span>
+                  </p>
+             <h1>}</h1>
              <a href="#" class = "btn btn-primary">View My Work</a>
          </div>
+    </section>
+        
      <!-- END of Hero Section -->
  
  
  
      <!-- START of About Section -->
-     <section class = "about">
+     <section class = "about whiteFonts show-on-scoll" id = "about">
          <h2>About Me</h2> 
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, aspernatur? Autem, libero, dicta commodi soluta aperiam omnis laboriosam consectetur modi amet suscipit voluptas, quisquam repellat a maiores dolor officia tenetur!</p>
+         <div class = about-container> 
          <p><img src="images/gitHubProfileIMG.png" alt="Aina's Profile Image"></p>
+         <p>
+            I am currently pursuing a Bachelor's degree in Creative Media, with a concentration in Video Game Design and Development, at the University of Hawaii - West Oahu (UHWO). I am expected to graduate in Spring 2025. My education allows me to blend my passion for technology and creativity, equipping me with the skills to develop engaging and interactive content.
+
+            My journey into coding began when I was introduced to the field by a friend pursuing a programming career. Intrigued by the idea, I dove into research and began creating personal projects. Over the past 6-7 months, during the pandemic, I've been self-teaching through online resources like FreeCodeCamp and W3Schools. Through Massive Open Online Courses (MOOC), I’ve familiarized myself with languages and libraries such as JavaScript, Bootstrap, and JQuery.
+       
+
+         </p>
+         </div>
      </section>
      <!-- END of About Section -->
  
@@ -134,7 +148,9 @@
  
      <!-- REQUIRED: Javascript -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
+<script src="js/textEffects.js"></script>
+
+
  </body
  
  </html>

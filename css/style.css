@@ -1,7 +1,98 @@
-header {
-    background: black;
-}
+/*
+This is the style.css which stores all the CSS styles for the website
+*/
 
-.navLinks {
-    color: white; 
+
+/*Global Styles*/
+
+html {
+    scroll-behavior: smooth;
+   }
+   
+.globalPadding {
+    padding: 80px 40px 80px 40px;
 }
+   
+   /* TEXT STYLES */
+   
+   /* Text Colors */
+   .pinkFonts {
+       color: magenta;
+   }
+   
+   .whiteFonts{
+       color: white; 
+   }
+   
+   .cyanFonts{
+       color: cyan;
+   }
+   
+   
+   
+   header {
+       background: black;
+   }
+   
+   
+   .navLinks {
+       color: white; 
+   }
+   
+   /*Sections */
+   
+   /* Hero Section */
+   .hero {
+       background: pink;
+       padding: 15px
+   }
+   .codeBox { 
+       background: black; 
+       padding: 20px;
+       padding-bottom: 30px;
+   
+   }
+   
+   .codeBox p {
+       margin-left: 20px;
+   }
+   /* About Section */
+   #about {
+       background: black;
+       padding: 15px
+   }
+   
+   
+   
+   
+   /* Text Hero Section TypeWriter Stylization */
+   .cursor {
+       animation: blink 0.7s infinite;
+   }
+   
+   @keyframes blink {
+     0%   { opacity: 1; }
+     50%  { opacity: 0; }
+     100% { opacity: 1; }
+   }
+   
+   
+   .text-type {
+       padding-top: 15px;
+       color: cyan;
+       font-size: 3rem;
+       margin-left: 10px;
+     }
+   
+     /* Creates fade effect when scrolling */
+     .show-on-scroll {
+       opacity: 0;
+       transform: translateY(20px);
+       transition: opacity 1.2s ease, transform 1.2s ease;
+     }
+     
+     .is-visible {
+       opacity: 1;
+       transform: none;
+     }
+   
