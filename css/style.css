@@ -23,7 +23,7 @@ This is the style.css which stores all the CSS styles for the website
 
 
 
-/* ------------- Hero Section -------------*/
+/* ------------- Nav Section -------------*/
 
 
 /* Navbar container layout */
@@ -99,29 +99,50 @@ This is the style.css which stores all the CSS styles for the website
     background: white;
     padding: 15px
 }
-
-.codeBox {
-    background: black;
+.codeBox { 
+    background: black; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
 
-        color: white;
-        overflow-wrap: break-word;     /* 🔑 breaks long words */
-        word-break: break-word;        /* handles extreme cases */
-        max-width: 100%;               /* prevents overflow */
-        width: 100%;
-      
-      
+
 }
 
 .codeBox p {
     margin-left: 20px;
 }
+/* About Section */
+#about {
+    background: black;
+}
+
+
+
+
+/* Text Hero Section TypeWriter Stylization */
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.text-type {
+    padding-top: 15px;
+    color: cyan;
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+
 
 /* About Section */
 #about {
     background: black;
 }
+
 
 .about-container {
     display: flex;
@@ -137,6 +158,10 @@ This is the style.css which stores all the CSS styles for the website
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.about-content-container p {
+    padding: 0 40px 0 40px;
 }
 
 .about-content-container img {
@@ -189,17 +214,7 @@ This is the style.css which stores all the CSS styles for the website
       
 }
 
-/* Creates fade effect when scrolling */
-.show-on-scroll {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.2s ease, transform 1.2s ease;
-}
 
-.is-visible {
-    opacity: 1;
-    transform: none;
-}
 
 
 /* Skills card */
@@ -444,3 +459,11 @@ section h2 {
     text-transform: capitalize;
   }
   
+  section p {
+    text-align: justify;           /* aligns text like a block */
+    max-width: 800px;              /* centers visually */
+    margin: 0 auto 20px auto;      /* centers block itself */
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: white;
+  }

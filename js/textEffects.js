@@ -3,7 +3,7 @@ class TypeWriter {
   constructor(textElement, words, wait = 3000) {
     this.textElement = textElement;
     this.words = words;
-    this.text = "";
+    this.txt = '';
     this.wordIndex = 0;
     this.wait = parseInt(wait, 10);
     this.type();
@@ -12,21 +12,25 @@ class TypeWriter {
 
   type() {
     const current = this.wordIndex % this.words.length;
-    const fullText = this.words[current];
+    const fullTxt = this.words[current];
 
-    this.text = this.isDeleting
-      ? fullText.substring(0, this.text.length - 1)
-      : fullText.substring(0, this.text.length + 1);
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
 
-    this.textElement.innerHTML = `<span class="text">${this.text}</span>`;
+    this.textElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
-    let typeSpeed = 300;
-    if (this.isDeleting) typeSpeed /= 2;
+    let typeSpeed = 200;
+    if (this.isDeleting) {
+      typeSpeed /= 2;
+    }
 
-    if (!this.isDeleting && this.text === fullText) {
+    if (!this.isDeleting && this.txt === fullTxt) {
       typeSpeed = this.wait;
       this.isDeleting = true;
-    } else if (this.isDeleting && this.text === "") {
+    } else if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
       this.wordIndex++;
       typeSpeed = 500;
@@ -36,29 +40,14 @@ class TypeWriter {
   }
 }
 
-// SCROLL FADE EFFECT
-function scrollFade() {
-  const elements = document.querySelectorAll(".show-on-scroll");
-  elements.forEach((el) => {
-    const rect = el.getBoundingClientRect();
-    const isVisible = rect.top < window.innerHeight - 20;
-    el.classList.toggle("is-visible", isVisible);
-  });
+// Init On DOM Load
+document.addEventListener('DOMContentLoaded', init);
+
+// Init App
+function init() {
+  const textElement = document.querySelector('.change-words');
+  const words = JSON.parse(textElement.getAttribute('data-words'));
+  const wait = textElement.getAttribute('data-wait');
+  new TypeWriter(textElement, words, wait);
 }
 
-function loop() {
-  scrollFade();
-  requestAnimationFrame(loop);
-}
-
-// INIT
-document.addEventListener("DOMContentLoaded", () => {
-  const textElement = document.querySelector(".text-type");
-  if (textElement) {
-    const words = JSON.parse(textElement.getAttribute("data-words"));
-    const wait = textElement.getAttribute("data-wait");
-    new TypeWriter(textElement, words, wait);
-  }
-
-  loop(); // start scroll loop
-});

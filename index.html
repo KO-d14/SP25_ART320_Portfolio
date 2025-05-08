@@ -40,6 +40,9 @@
     <!-- Bootstrap -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 
@@ -67,15 +70,14 @@
     <!-- END of Header Section-->
 
     <!-- START of Hero Section (this is the SECTION BELOW TOP BANNER) -->
-    <section class="hero show-on-scoll globalPadding" id="hero">
+    <section class="hero globalPadding scroll-animate animate__animated" data-animate="animate__fadeInUp" id="hero">
         <div class="container text-start codeBox whiteFonts ">
             <h1 class="display-4"> <span class="pinkFonts"> Hello </span> World { </h1>
-            <p class="last-para">
-                My name is Aina 
-                <br>
-                a <span class="text-type change-words" data-wait="3000"
-                    data-words='["Developer", "Creator", "Philomath"]'></span>
-            </p>
+                <p class="last-para">
+                    My name is Aina <br>
+                    a <span class="text-type change-words" data-wait="3000"
+                        data-words='["Developer", "Creator", "Philomath"]'></span>
+                  </p>
             <h1>}</h1>
             
         </div>
@@ -86,11 +88,11 @@
 
 
     <!-- START of About Section -->
-    <section class="about whiteFonts show-on-scoll globalPadding" id="about">
+    <section class="about whiteFonts  globalPadding scroll-animate animate__animated" data-animate="animate__fadeInUp" id="about">
         <div class="about-container" >
             <h2>About Me</h2>
             <div class=about-content-container>
-                <p><img src="images/gitHubProfileIMG.png" alt="Aina's Profile Image"></p>
+                <p><img src="images/profileIMG.png" alt="Aina's Profile Image"></p>
                 <p>
                     I am currently pursuing a Bachelor's degree in Creative Media, with a concentration in Video Game
                     Design and Development, at the University of Hawaii - West Oahu (UHWO). I am expected to graduate in
@@ -118,7 +120,7 @@
 
 
     <!-- START of Project Section -->
-    <section class="project" id="portfolio">
+    <section class="project scroll-animate animate__animated" data-animate="animate__fadeInUp" id="portfolio">
         <h2>Projects</h2>
 
 
@@ -164,7 +166,7 @@
 
 
 
-    <section class="contact-section ask-question" id = "contact">
+    <section class="contact-section ask-question scroll-animate animate__animated" data-animate="animate__fadeInUp" id = "contact">
         <h2>Questions?</h2>
         <form class="contact-form">
             <label for="name">Name</label>
@@ -181,7 +183,7 @@
     </section>
 
 
-    <footer class="footer-section ">
+    <footer class="footer-section scroll-animate animate__animated" data-animate="animate__fadeInUp">
         <h2>Let's Work Together!</h2>
         <div class="social-icons d-flex flex-wrap justify-content-center flex-md-row flex-column gap-4">
             <a href="https://github.com/KO-d14"><i class="bi bi-github"></i> Github</a>
@@ -200,6 +202,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="js/textEffects.js"></script>
+    
+    <script src="scrollAnimation.js"></script>
+
 
 
 </body>
